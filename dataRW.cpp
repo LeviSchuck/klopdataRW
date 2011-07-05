@@ -150,7 +150,7 @@ namespace klop {
         //we basically get our data from another function which makes a string 
         //instead of saving it immediately, in case it is desired to be used
         //somewhere else.
-        printf("Writing to %s.\n", location.c_str());
+        //printf("Writing to %s.\n", location.c_str());
         std::ofstream fout(location.c_str());
         fout << dataToXML(root).c_str();
         fout.close();
